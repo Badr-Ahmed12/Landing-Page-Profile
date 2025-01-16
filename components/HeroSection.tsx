@@ -38,7 +38,7 @@ export default function HeroSection() {
         <p className="text-gray-600 text-sm md:text-base mb-6">
           {heroText.description}
         </p>
-        <Button children="Learn More" />
+        <Button name="Get Started" />
       </motion.div>
 
       {/* Right Section (Image) */}
