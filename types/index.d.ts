@@ -39,3 +39,10 @@ export interface Logo {
     rating: number;
   }
   
+export interface ButtonProps {
+    className?: string;
+    type?: "button" | "submit" | "reset";
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    disabled?: boolean;
+    name: string; 
+}

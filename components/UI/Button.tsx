@@ -1,16 +1,10 @@
-interface ButtonProps {
-    className?: string;
-    type?: "button" | "submit" | "reset";
-    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
-    disabled?: boolean;
-}
-
+import ButtonProps from "../types/index.d.ts";
 
 export default function Button({
     className = "",
     type = "button",
     onClick,
-    disabled,
+    disabled = false,
     name,
 }: ButtonProps) {
     return (
@@ -20,7 +14,7 @@ export default function Button({
             onClick={onClick}
             disabled={disabled}
         >
-    {name}
+            {name}
         </button>
     );
 }
