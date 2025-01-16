@@ -1,4 +1,10 @@
-import ButtonProps from "../types/index.d.ts";
+ interface ButtonProps {
+    className?: string;
+    type?: "button" | "submit" | "reset";
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    disabled?: boolean;
+    name: string; 
+}
 
 export default function Button({
     className = "",
@@ -18,5 +24,6 @@ export default function Button({
         </button>
     );
 }
+
 
 
