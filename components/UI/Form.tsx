@@ -8,7 +8,7 @@ export default function Form() {
     event.preventDefault();
     setShowAlert(true);
 
-    // إخفاء الرسالة بعد 3 ثوانٍ
+   
     setTimeout(() => {
       setShowAlert(false);
     }, 3000);

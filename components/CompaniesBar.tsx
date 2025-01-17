@@ -1,8 +1,9 @@
 "use client";
-
 import Image from "next/image";
-import { Logos } from "@/context";
+import { logos } from "@/context";
 import { motion } from "framer-motion";
+
+
 
 const animation = {
   hidden: { opacity: 0 },
@@ -23,7 +24,7 @@ export default function CompaniesBar() {
       animate="visible"
     >
       <div className="container mx-auto flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8">
-        {Logos.map((logo, index) => (
+        {logos.map((logo, index) => (
           <motion.div
             key={index}
             className="flex justify-center"
@@ -33,6 +34,8 @@ export default function CompaniesBar() {
               src={logo.src}
               alt={logo.alt}
               className="h-12 md:h-16 object-contain max-w-xs mx-auto"
+              width={80}
+              height={60}
             />
           </motion.div>
         ))}
@@ -40,3 +43,4 @@ export default function CompaniesBar() {
     </motion.div>
   );
 }
+
