@@ -1,6 +1,15 @@
+import { StaticImageData } from "next/image";
+
 export interface Logo {
-    src: string;
+    src: StaticImageData;
     alt: string;
+  }
+
+  
+  export interface Project {
+    image: StaticImageData;
+    title: string;
+    category: string;
   }
   
   export interface ContactInfo {
@@ -8,16 +17,11 @@ export interface Logo {
     description: string;
   }
   
-  export interface Project {
-    image: string;
-    title: string;
-    category: string;
-  }
-  
+
   export interface HeroText {
     title: string;
     description: string;
-    image: string;
+    image: StaticImageData;
   }
   
   export interface NavLink {
@@ -35,21 +39,21 @@ export interface Logo {
     text: string;
     name: string;
     role: string;
-    image: string;
+    image: StaticImageData;
     rating: number;
   }
   
   export interface Images {
-    Group5334: string;
-    Image1Traced: string;
-    Image2Traced: string;
-    Image5Traced: string;
-    Image1: string;
-    Image2: string;
-    Image3: string;
-    Image4: string;
-    Image5: string;
-    Image6: string;
-    HeaderImage1: string;
-    ClientImage: string;
+    Group5334: StaticImageData;
+    Image1Traced: StaticImageData;
+    Image2Traced: StaticImageData;
+    Image5Traced: StaticImageData;
+    Image1: StaticImageData;
+    Image2: StaticImageData;
+    Image3: StaticImageData;
+    Image4: StaticImageData;
+    Image5: StaticImageData;
+    Image6: StaticImageData;
+    HeaderImage1: StaticImageData;
+    ClientImage: StaticImageData;
   }

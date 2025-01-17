@@ -49,8 +49,6 @@ export default function HeroSection() {
             alt={heroText.title}
             className="w-full h-full object-cover"
             layout="responsive"
-            width={400}
-            height={500}
           />
         </div>
 

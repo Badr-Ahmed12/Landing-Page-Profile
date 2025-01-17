@@ -2,28 +2,10 @@ import React, { useState } from "react";
 import Button from "./Button";
 
 export default function Form() {
-  const [showAlert, setShowAlert] = useState(false);
-
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    setShowAlert(true);
-
-   
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 3000);
-  };
-
+  
   return (
     <div className="relative bg-white shadow-md rounded-md p-6 max-w-lg mx-auto">
-      {showAlert && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-green-500 text-white px-6 py-4 rounded-md shadow-md text-center">
-            <p className="text-lg font-semibold">Email sent successfully!</p>
-          </div>
-        </div>
-      )}
-      <form className="space-y-4" onSubmit={handleSubmit}>
+      <form>
         <div className="mb-4">
           <label
             htmlFor="name"
@@ -57,3 +39,5 @@ export default function Form() {
     </div>
   );
 }
+
+

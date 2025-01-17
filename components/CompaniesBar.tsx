@@ -34,8 +34,6 @@ export default function CompaniesBar() {
               src={logo.src}
               alt={logo.alt}
               className="h-12 md:h-16 object-contain max-w-xs mx-auto"
-              width={80}
-              height={60}
             />
           </motion.div>
         ))}
